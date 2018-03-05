@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=kapacita
+comment0.target=Batoh(int)
+comment1.params=
+comment1.target=boolean\ jePlny()
+comment1.text=\r\n\ @return\ vraci\ true,\ je-li\ batoh\ plny\ a\ nelze\ tak\ do\ nej\ pridat\ dalsi\ predmety\r\n
+comment2.params=predmet
+comment2.target=void\ vlozPredmet(Predmet)
+comment2.text=\r\n\ metoda\ vlozi\ predmet\ do\ batohu\r\n\ @param\ predmet\r\n
+comment3.params=predmet\ lokace
+comment3.target=void\ odlozPredmet(Predmet,\ Lokace)
+comment3.text=\r\n\ vyjme\ predmet\ z\ batohu\ a\ zanecha\ ho\ na\ aktualni\ lokaci\r\n\ @param\ predmet\r\n\ @param\ lokace\r\n
+comment4.params=nazev
+comment4.target=boolean\ obsahujePredmet(java.lang.String)
+comment4.text=\r\n\ \r\n\ @param\ predmet\r\n\ @return\ vraci\ true,\ pokud\ se\ predmet\ naleza\ v\ batohu\r\n
+comment5.params=nazevPredmetu
+comment5.target=Predmet\ najdiPredmet(java.lang.String)
+comment5.text=\r\n\ Najde\ v\ batohu\ p\u0159edm\u011Bt\ s\ dan\u00FDm\ n\u00E1zvem\ a\ vr\u00E1t\u00ED\ ho.\ Pokud\ v\ batohu\ p\u0159edm\u011Bt\ s\ dan\u00FDm\r\n\ n\u00E1zvem\ nen\u00ED,\ vr\u00E1t\u00ED\ null.\r\n\ \r\n\ @param\ \ \ \ \ \ nazevPredmetu\ n\u00E1zev\ p\u0159edm\u011Btu\r\n\ @returns\ \ \ \ p\u0159edm\u011Bt\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment7.params=
+comment7.target=int\ getKapacita()
+numComments=8

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=hPlan
+comment0.target=PrikazProzkoumej(HerniPlan)
+comment0.text=\r\n\ Konstruktor\ t\u0159\u00EDdy\r\n\r\n\ @param\ \ \ \ plan\ hern\u00ED\ pl\u00E1n,\ ve\ kter\u00E9m\ se\ bude\ ve\ h\u0159e\ "chodit"\ \r\n
+comment1.params=parametry
+comment1.target=java.lang.String\ proved(java.lang.String[])
+comment1.text=\r\n\ Prov\u00E1d\u00ED\ p\u0159\u00EDkaz\ "prozkoumej".\ Pokud\ nebyl\ zad\u00E1n\ \u017E\u00E1dn\u00FD\ parametr,\ vr\u00E1t\u00ED\ kompletn\u00ED\r\n\ popis\ aktu\u00E1ln\u00ED\ lokace.\ Pokud\ byl\ zad\u00E1n\ jeden\ parametr,\ pokus\u00ED\ se\ v\ aktu\u00E1ln\u00ED\ lokaci\r\n\ a\ n\u00E1sledn\u011B\ v\ batohu\ naj\u00EDt\ p\u0159edm\u011Bt\ s\ dan\u00FDm\ n\u00E1zvem\ a\ vr\u00E1tit\ jeho\ popis.\ Pokud\ bylo\r\n\ zad\u00E1no\ v\u00EDce\ parametr\u016F,\ vr\u00E1t\u00ED\ chybov\u00E9\ hl\u00E1\u0161en\u00ED.\r\n\r\n\ @param\ \ \ \ \ parametry\ m\u016F\u017Ee\ jako\ parametr\ obsahovat\ n\u00E1zev\ p\u0159edm\u011Btu,\ kter\u00FD\ chce\ hr\u00E1\u010D\ prozkoumat\r\n\ @return\ \ \ \ zpr\u00E1va,\ kterou\ vyp\u00ED\u0161e\ hra\ hr\u00E1\u010Di\r\n
+comment2.params=
+comment2.target=java.lang.String\ getNazev()
+comment2.text=\r\n\ Metoda\ vrac\u00ED\ n\u00E1zev\ p\u0159\u00EDkazu\ (slovo\ kter\u00E9\ pou\u017E\u00EDv\u00E1\ hr\u00E1\u010D\ pro\ jeho\ vyvol\u00E1n\u00ED).\r\n\r\n\ @return\ \ \ \ n\u00E1zev\ p\u0159\u00EDkazu\r\n
+numComments=3

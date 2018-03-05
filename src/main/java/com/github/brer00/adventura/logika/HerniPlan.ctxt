@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=HerniPlan()
+comment0.text=\r\n\ Konstruktor\ kter\u00FD\ vytv\u00E1\u0159\u00ED\ jednotliv\u00E9\ lokace\ a\ propojuje\ je\ pomoc\u00ED\ v\u00FDchod\u016F.\r\n
+comment1.params=
+comment1.target=void\ zalozLokaceHry()
+comment1.text=\r\n\ Vytv\u00E1\u0159\u00ED\ jednotliv\u00E9\ lokace\ a\ propojuje\ je\ pomoc\u00ED\ v\u00FDchod\u016F.\r\n\ Jako\ v\u00FDchoz\u00ED\ aktu\u00E1ln\u00ED\ lokaci\ nastav\u00ED\ muzeum\r\n
+comment2.params=
+comment2.target=Lokace\ getAktualniLokace()
+comment2.text=\r\n\ Metoda\ vrac\u00ED\ odkaz\ na\ aktu\u00E1ln\u00ED\ lokaci,\ ve\ kter\u00E9\ se\ hr\u00E1\u010D\ pr\u00E1v\u011B\ nach\u00E1z\u00ED.\r\n\r\n\ @return\ \ \ \ aktu\u00E1ln\u00ED\ lokace\r\n
+comment3.params=lokace
+comment3.target=void\ setAktualniLokace(Lokace)
+comment3.text=\r\n\ Metoda\ nastav\u00ED\ aktu\u00E1ln\u00ED\ lokaci,\ pou\u017E\u00EDv\u00E1\ se\ nej\u010Dast\u011Bji\ p\u0159i\ p\u0159echodu\ mezi\ lokacemi\r\n\r\n\ @param\ \ \ \ lokace\ nov\u00E1\ aktu\u00E1ln\u00ED\ lokace\r\n
+comment4.params=
+comment4.target=boolean\ hracVyhral()
+comment4.text=\r\n\ Metoda\ vrac\u00ED\ informaci,\ zda\ hr\u00E1\u010D\ vyhr\u00E1l.\r\n\ \r\n\ @return\ \ \ \ true,\ pokud\ hr\u00E1\u010D\ vyhr\u00E1l;\ jinak\ false\r\n
+comment5.params=
+comment5.target=boolean\ hracProhral()
+comment5.text=\r\n\ Metoda\ vrac\u00ED\ informaci,\ zda\ hr\u00E1\u010D\ prohral.\ \r\n\ prohra\ nastane\ v\ pripade,\ kdy\ hrac\ vstoupi\ do\ nektere\ proherni\ lokace\r\n\ @return\ true,\ pokud\ hrac\ prohral,\ jinak\ false\r\n
+comment6.params=
+comment6.target=Batoh\ getBatoh()
+comment6.text=\r\n\ Vraci\ odkaz\ na\ hracuv\ batoh\r\n
+numComments=7

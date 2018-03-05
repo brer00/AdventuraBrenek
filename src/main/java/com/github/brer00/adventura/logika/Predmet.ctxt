@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.params=nazev\ popis\ prenositelny
+comment0.target=Predmet(java.lang.String,\ java.lang.String,\ boolean)
+comment0.text=\r\n\ Vytvo\u0159\u00ED\ nov\u00FD\ p\u0159edm\u011Bt\ se\ zadan\u00FDm\ n\u00E1zvem,\ popisem\ a\ p\u0159enositelnost\u00ED.\r\n\ \r\n\ @param\ \ \ \ nazev\ \ \ \ \ \ \ \ \ \ n\u00E1zev\ p\u0159edm\u011Btu\ (jedno\ slovo)\r\n\ @param\ \ \ \ popis\ \ \ \ \ \ \ \ \ \ popis\ p\u0159edm\u011Btu\ (m\u016F\u017Ee\ se\ jednat\ o\ text\ libovoln\u00E9\ d\u00E9lky)\r\n\ @param\ \ \ \ prenositelny\ \ \ true,\ pokud\ m\u00E1\ b\u00FDt\ p\u0159edm\u011Bt\ p\u0159enositeln\u00FD;\ jinak\ false\r\n
+comment1.params=nazev\ popis
+comment1.target=Predmet(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Vytvo\u0159\u00ED\ nov\u00FD\ p\u0159enositeln\u00FD\ p\u0159edm\u011Bt\ se\ zadan\u00FDm\ n\u00E1zvem\ a\ popisem.\r\n\ \r\n\ @param\ \ \ \ nazev\ \ \ \ n\u00E1zev\ p\u0159edm\u011Btu\ (jedno\ slovo)\r\n\ @param\ \ \ \ popis\ \ \ \ popis\ p\u0159edm\u011Btu\ (m\u016F\u017Ee\ se\ jednat\ o\ text\ libovoln\u00E9\ d\u00E9lky)\r\n
+comment2.params=
+comment2.target=java.lang.String\ getNazev()
+comment2.text=\r\n\ Vr\u00E1t\u00ED\ n\u00E1zev\ p\u0159edm\u011Btu.\r\n\ \r\n\ @returns\ \ \ \ n\u00E1zev\ p\u0159edm\u011Btu\r\n
+comment3.params=
+comment3.target=java.lang.String\ getPopis()
+comment3.text=\r\n\ Vr\u00E1t\u00ED\ popis\ p\u0159edm\u011Btu.\r\n\ \r\n\ @returns\ \ \ \ popis\ p\u0159edm\u011Btu\r\n
+comment4.params=
+comment4.target=boolean\ isPrenositelny()
+comment4.text=\r\n\ Vr\u00E1t\u00ED\ p\u0159\u00EDznak,\ zda\ je\ p\u0159edm\u011Bt\ p\u0159enostilen\u00FD,\ nebo\ ne.\r\n\ \r\n\ @returns\ \ \ \ true,\ pokud\ je\ p\u0159edm\u011Bt\ p\u0159enositeln\u00FD;\ jinak\ false\r\n
+comment5.params=popis
+comment5.target=void\ setPopis(java.lang.String)
+comment5.text=\r\n\ Nastav\u00ED\ nov\u00FD\ popis\ p\u0159edm\u011Btu.\r\n\ \r\n\ @param\ \ \ \ popis\ nov\u00FD\ popisp\u0159edm\u011Btu\r\n
+comment6.params=prenositelny
+comment6.target=void\ setPrenositelny(boolean)
+comment6.text=\r\n\ Nastav\u00ED\ p\u0159enositelnost\ p\u0159edm\u011Btu.\r\n\ \r\n\ @param\ \ \ \ prenositelny\ \ \ true,\ pokud\ m\u00E1\ b\u00FDt\ p\u0159edm\u011Bt\ p\u0159enositeln\u00FD;\ jinak\ false\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

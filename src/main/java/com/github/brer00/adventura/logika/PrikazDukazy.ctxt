@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=batoh
+comment0.target=PrikazDukazy(Batoh)
+comment1.params=parametry
+comment1.target=java.lang.String\ proved(java.lang.String[])
+comment2.params=
+comment2.target=java.lang.String\ getNazev()
+comment2.text=\r\n\ Metoda\ vrac\u00ED\ n\u00E1zev\ p\u0159\u00EDkazu\ (slovo\ kter\u00E9\ pou\u017E\u00EDv\u00E1\ hr\u00E1\u010D\ pro\ jeho\ vyvol\u00E1n\u00ED).\r\n\r\n\ @return\ \ \ \ n\u00E1zev\ p\u0159\u00EDkazu\r\n
+numComments=3

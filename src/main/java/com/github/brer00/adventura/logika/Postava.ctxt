@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=jmeno\ promluva
+comment0.target=Postava(java.lang.String,\ java.lang.String)
+comment1.params=
+comment1.target=java.lang.String\ getPromluva()
+comment2.params=promluva
+comment2.target=void\ setPromluva(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getJmeno()
+comment4.params=jmeno
+comment4.target=void\ setJmeno(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

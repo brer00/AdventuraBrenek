@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=hPlan
+comment0.target=PrikazVezmi(HerniPlan)
+comment1.params=parametry
+comment1.target=java.lang.String\ proved(java.lang.String[])
+comment1.text=\r\n\ Metoda\ p\u0159edstavuje\ zpracov\u00E1n\u00ED\ p\u0159\u00EDkazu\ pro\ sebr\u00E1n\u00ED\ p\u0159edm\u011Btu.\r\n\ Nejprve\ zkontroluje,\ zda\ byl\ zad\u00E1n\ pr\u00E1v\u011B\ jeden\ n\u00E1zev\ jako\r\n\ parametr,\ ov\u011B\u0159\u00ED,\ zda\ v\ aktu\u00E1ln\u00ED\ lokaci\ je\ p\u0159edm\u011Bt\ s\ t\u00EDmto\r\n\ n\u00E1zvem,\ zda\ je\ p\u0159enositeln\u00FD,\ zda\ je\ v\ batohu\ m\u00EDsto\ a\r\n\ n\u00E1sledn\u011B\ p\u0159edm\u011Bt\ odebere\ z\ lokace\ a\ vlo\u017E\u00ED\ ho\ do\ batohu.\r\n\ \r\n\ @param\ parametry\ pole\ parametr\u016F\ zadan\u00FDch\ na\ p\u0159\u00EDkazov\u00E9\ \u0159\u00E1dce\r\n\ @return\ v\u00FDsledek\ zpracov\u00E1n\u00ED,\ tj.\ text,\ kter\u00FD\ se\ vyp\u00ED\u0161e\ na\ konzoli\r\n
+comment2.params=
+comment2.target=java.lang.String\ getNazev()
+comment2.text=\r\n\ Metoda\ vrac\u00ED\ n\u00E1zev\ p\u0159\u00EDkazu\ (slovo\ kter\u00E9\ pou\u017E\u00EDv\u00E1\ hr\u00E1\u010D\ pro\ jeho\ vyvol\u00E1n\u00ED).\r\n\r\n\ @return\ \ \ \ n\u00E1zev\ p\u0159\u00EDkazu\r\n
+numComments=3
