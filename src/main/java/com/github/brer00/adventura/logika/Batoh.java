@@ -1,7 +1,11 @@
 package com.github.brer00.adventura.logika;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Observable;
 
 /**
  * Trida Batoh reprezentuje uloziste predmetu tridy @Predmet 
@@ -11,7 +15,7 @@ import java.util.Map;
  * @author     Radim Břenek
  * @version    16.5.2017
  */
-public class Batoh {
+public class Batoh extends Observable {
 
     private Map<String, Predmet> predmety;
     private int kapacita;
@@ -38,6 +42,8 @@ public class Batoh {
 	public void vlozPredmet(Predmet predmet) 
 	{
 		predmety.put(predmet.getNazev(), predmet);	
+		this.setChanged();
+	    this.notifyObservers();
 	}
 	
 	
@@ -52,6 +58,8 @@ public class Batoh {
 		{
 			predmety.remove(predmet.getNazev());
 			lokace.vlozPredmet(predmet);	
+			this.setChanged();
+		    this.notifyObservers();
 		} 
 
 	}
@@ -97,6 +105,19 @@ public class Batoh {
 	        
 	        return seznam;
 		}   
+	}
+	
+	
+	public List<Predmet> getPredmety(){
+		
+		List<Predmet> list = new ArrayList<>();
+        for (Predmet predmet : predmety.values()){
+        	list.add(predmet);
+        }	
+        // seradime, aby se vzdy vracelo stejne poradi
+        Collections.sort(list);
+       
+        return list;
 	}
 
 	
