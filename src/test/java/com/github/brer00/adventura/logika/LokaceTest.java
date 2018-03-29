@@ -52,8 +52,8 @@ public class LokaceTest
      */
     @Test
     public  void testLzeProjit() {		
-        Lokace lokace1 = new Lokace("namesti", "namesti_popis");
-        Lokace lokace2 = new Lokace("hospoda", "hospoda_popis");
+        Lokace lokace1 = new Lokace("namesti", "namesti_popis", "");
+        Lokace lokace2 = new Lokace("hospoda", "hospoda_popis","");
         lokace1.setVychod(lokace2);
         lokace2.setVychod(lokace1);
         assertEquals(lokace2, lokace1.vratSousedniLokaci("hospoda"));
@@ -66,7 +66,7 @@ public class LokaceTest
     @Test
     public void testVeci()
     {
-        Lokace lokace1 = new Lokace("park", "park_popis");
+        Lokace lokace1 = new Lokace("park", "park_popis","");
         Predmet predmet1 = new Predmet(OTISK_BOTY, "otisk_boty_popis", true);
         Predmet predmet2 = new Predmet(FONTANA, "fontana_popis", false);
         lokace1.vlozPredmet(predmet1);

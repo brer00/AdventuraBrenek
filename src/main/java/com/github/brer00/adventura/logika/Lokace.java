@@ -26,6 +26,8 @@ public class Lokace {
 
     private String nazev;
     private String popis;
+    private String urlObrazku;
+    private String urlMapa;
     private Set<Lokace> vychody;   // obsahuje sousední lokace
     private Map<String, Predmet> predmety;
     private Map<String, Postava> postavy;
@@ -37,9 +39,10 @@ public class Lokace {
      * @param    nazev nazev lokace, jednoznačný identifikátor, jedno slovo nebo víceslovný název bez mezer
      * @param    popis Popis lokace
      */
-    public Lokace(String nazev, String popis) {
+    public Lokace(String nazev, String popis, String urlObrazku) {
         this.nazev = nazev;
         this.popis = popis;
+        this.urlObrazku = urlObrazku;
         vychody = new HashSet<>();
         predmety = new HashMap<>();
         postavy = new HashMap<>();
@@ -300,6 +303,27 @@ public class Lokace {
     {
         return postavy.containsKey(jmenoPostavy);
     }
-    
+
+
+    @Override
+    public String toString() {
+        return nazev;
+    }
+
+	public String getUrlObrazku() {
+		return urlObrazku;
+	}
+
+	public void setUrlObrazku(String urlObrazku) {
+		this.urlObrazku = urlObrazku;
+	}
+
+	public String getUrlMapa() {
+		return urlMapa;
+	}
+
+	public void setUrlMapa(String urlMapa) {
+		this.urlMapa = urlMapa;
+	}
 
 }

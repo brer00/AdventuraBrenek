@@ -2,6 +2,8 @@
  * Kontrola kódování: Příliš žluťoučký kůň úpěl ďábelské ódy. */
 package com.github.brer00.adventura.logika;
 
+import java.util.Observable;
+
 /**
  * Class HerniPlan - třída představující mapu a stav adventury.
  * 
@@ -12,7 +14,7 @@ package com.github.brer00.adventura.logika;
  * @author     Michael Kolling, Lubos Pavlicek, Jarmila Pavlickova, Jan Riha, Radim Břenek
  * @version    LS 2016/2017
  */
-public class HerniPlan {
+public class HerniPlan extends Observable {
 
     private static final String VITEZNA_LOKACE = "cela2";
 	private static final String PROHERNI_LOKACE_1 = "cela1";
@@ -39,20 +41,32 @@ public class HerniPlan {
         Lokace muzeum = new Lokace("muzeum", "Tak a můžeme začít! Tady máš ten slibovaný popis podezřelých:\n" +
         "Tomáš Jedno (cela 1) - věk 30, výška 185 cm, silnější postavy, hnědé krátké vlasy, povoláním advokát, koníček - šachy\n" +
         "Pavel Brut (cela 2) - věk 28, výška 190 cm, štíhlé postavy, blond krátké vlasy, povoláním automechanik, vášnivý sportovec - běžec\n" +
-        "Jarda Malý (cela 3) - věk 38, výška 150 cm, štíhlé šlachovité postavy, blond dlouhé vlasy, povoláním akademický malíř, horolezec");
-        Lokace namesti = new Lokace("namesti", "Tak jsem vyšel z muzea na náměstí a hned tu vidím spousty zajímavých věcí. Jo a hned vedle náměstí je hospoda, tam bych se měl jít podívat hned jak to tu prozkoumám."); 
-        Lokace hospoda = new Lokace("hospoda", "To je teda ale pajzl! A hele, támhle sedí místní štamgasta Pepa, ten je tu vždycky od večera do rána, tak se ho zkusím zeptat, jestli náhodou něco neviděl."); 
-        Lokace gangsterskaCtvrt = new Lokace("gangsterska_ctvrt", "Tohle je vyhlášená gangsterská čtvrť našeho města, jestli tady něco podezřelého nenajdu, tak už nikde... Je to tu fakt drsný, až odsud odejdu, tak se budu muset jít trochu uklidnit do parku"); // jednoslovný krátký název
-        Lokace park = new Lokace("park", "Nádherná příroda, jupí! A támhle jde místní drbna Nováková, ta už tak nádherná není, ale mohla by něco vědět!"); 
-        Lokace zastavarna = new Lokace("zastavarna", "Pachatel si asi nenechá obraz viset na zdi, ale bude se ho hodně rychle snažit prodat, tak se tu porozhlídnu, třeba tu bude."); 
+        "Jarda Malý (cela 3) - věk 38, výška 150 cm, štíhlé šlachovité postavy, blond dlouhé vlasy, povoláním akademický malíř, horolezec", "obrazek_muzeum.jpg");
+        Lokace namesti = new Lokace("namesti", "Tak jsem vyšel z muzea na náměstí a hned tu vidím spousty zajímavých věcí. Jo a hned vedle náměstí je hospoda, tam bych se měl jít podívat hned jak to tu prozkoumám.", "obrazek_namesti.jpg"); 
+        Lokace hospoda = new Lokace("hospoda", "To je teda ale pajzl! A hele, támhle sedí místní štamgasta Pepa, ten je tu vždycky od večera do rána, tak se ho zkusím zeptat, jestli náhodou něco neviděl.", "obrazek_hospoda.jpg"); 
+        Lokace gangsterskaCtvrt = new Lokace("gangsterska_ctvrt", "Tohle je vyhlášená gangsterská čtvrť našeho města, jestli tady něco podezřelého nenajdu, tak už nikde... Je to tu fakt drsný, až odsud odejdu, tak se budu muset jít trochu uklidnit do parku", "obrazek_gangsterskactvrt.jpg"); // jednoslovný krátký název
+        Lokace park = new Lokace("park", "Nádherná příroda, jupí! A támhle jde místní drbna Nováková, ta už tak nádherná není, ale mohla by něco vědět!", "obrazek_park.jpg"); 
+        Lokace zastavarna = new Lokace("zastavarna", "Pachatel si asi nenechá obraz viset na zdi, ale bude se ho hodně rychle snažit prodat, tak se tu porozhlídnu, třeba tu bude.", "obrazek_zastavarna.jpg"); 
         Lokace policejniStanice = new Lokace("policie", "Tak inspektore, tady máš pro připomenutí popis všech podezřelých:\n" +
         "Tomáš Jedno (cela 1) - věk 30, výška 185 cm, silnější postavy, hnědé krátké vlasy, povoláním advokát, koníček - šachy\n" +
         "Pavel Brut (cela 2) - věk 28, výška 190 cm, štíhlé postavy, blond krátké vlasy, povoláním automechanik, vášnivý sportovec - běžec\n" +
         "Jarda Malý (cela 3) - věk 38, výška 150 cm, štíhlé šlachovité postavy, blond dlouhé vlasy, povoláním akademický malíř, horolezec\n" +
-        "Teď ho porovnej se všemi nasbíranými důkazy a jdi jedno z nich obvinit do jeho cely!");  
-        Lokace cela1 = new Lokace("cela1", "Vždyť mám hnědé vlasy, tak proč bych používal hnědou paruku?! Navíc jsi v kukle našel blonďatý vlas.. A taky opravdu nevím, kde bych se ušpil od barvy nebo oleje.."); 
-        Lokace cela2 = new Lokace("cela2", "Dobře, přiznávám se, byl jsem to já!"); 
-        Lokace cela3 = new Lokace("cela3", "Jsi ten nejhorší detektiv na světě, vždyť já jsem to nemohl být ani přinejmenším!"); 
+        "Teď ho porovnej se všemi nasbíranými důkazy a jdi jedno z nich obvinit do jeho cely!", "obrazek_policejnistanice.jpg");  
+        Lokace cela1 = new Lokace("cela1", "Vždyť mám hnědé vlasy, tak proč bych používal hnědou paruku?! Navíc jsi v kukle našel blonďatý vlas.. A taky opravdu nevím, kde bych se ušpil od barvy nebo oleje..", "obrazek_cela1.jpg"); 
+        Lokace cela2 = new Lokace("cela2", "Dobře, přiznávám se, byl jsem to já!", "obrazek_cela2.jpg"); 
+        Lokace cela3 = new Lokace("cela3", "Jsi ten nejhorší detektiv na světě, vždyť já jsem to nemohl být ani přinejmenším!", "obrazek_cela3.jpg"); 
+        
+        muzeum.setUrlMapa("mapa_muzeum.png");
+        namesti.setUrlMapa("mapa_namesti.png");
+        hospoda.setUrlMapa("mapa_hospoda.png");
+        gangsterskaCtvrt.setUrlMapa("mapa_gangsterskactvrt.png");
+        park.setUrlMapa("mapa_park.png");
+        zastavarna.setUrlMapa("mapa_zastavarna.png");
+        policejniStanice.setUrlMapa("mapa_policejnistanice.png");
+        cela1.setUrlMapa("mapa_cela1.png");
+        cela2.setUrlMapa("mapa_cela2.png");
+        cela3.setUrlMapa("mapa_cela3.png");
+        
        
         // přiřazují se průchody mezi lokacemi (sousedící lokace)
         muzeum.setVychod(namesti);  
@@ -130,6 +144,8 @@ public class HerniPlan {
      */
     public void setAktualniLokace(Lokace lokace) {
        aktualniLokace = lokace;
+       this.setChanged();
+       this.notifyObservers();
     }
     
     /**

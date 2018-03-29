@@ -2,6 +2,8 @@
  * Kontrola kódování: Příliš žluťoučký kůň úpěl ďábelské ódy. */
 package com.github.brer00.adventura.logika;
 
+import java.util.Comparator;
+
 /**
  * Třída Predmet představuje jednotlivé předměty (věci), které je možné
  * ve hře najít.
@@ -13,10 +15,11 @@ package com.github.brer00.adventura.logika;
  * @author     Jan Riha, Radim Břenek
  * @version    LS 2016/2017
  */
-public class Predmet
+public class Predmet implements Comparable<Predmet>
 {
     private String nazev;
     private String popis;
+    private String urlObrazek;
     private boolean prenositelny;
     
     /**
@@ -99,5 +102,22 @@ public class Predmet
     {
         return "Predmet: " + nazev;
     }
+    
+
+	@Override
+	public int compareTo(Predmet o) {
+		return nazev.compareTo(o.getNazev());
+	}
+
+	public String getUrlObrazek() {
+		return urlObrazek;
+	}
+
+	public void setUrlObrazek(String urlObrazek) {
+		this.urlObrazek = urlObrazek;
+	}
+    
+    
+    
 
 }

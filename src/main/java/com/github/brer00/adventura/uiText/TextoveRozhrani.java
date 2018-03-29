@@ -1,10 +1,10 @@
 /* Soubor je ulozen v kodovani UTF-8.
  * Kontrola kódování: Příliš žluťoučký kůň úpěl ďábelské ódy. */
-package uiText;
+package com.github.brer00.adventura.uiText;
 
 import java.io.*;
 import java.util.Scanner;
-import logika.IHra;
+import com.github.brer00.adventura.logika.IHra;
 
 /**
  * Class TextoveRozhrani
@@ -48,43 +48,7 @@ public class TextoveRozhrani {
         System.out.println(hra.vratEpilog());
     }
     
-    /**
-     * Hlavní metoda hry pro přehrávání scénáře ze souboru. Vypíše úvodní text a pak
-     * opakuje čtení a zpracování příkazu ze souboru, dokud nepřečte celý soubor nebo
-     * do konce hry (dokud metoda konecHry() z logiky nevrátí hodnotu true). Nakonec
-     * vypíše text epilogu.
-     * 
-     * @param    nazevSouboru název textového souboru se scénářem hry
-     */
-    public void hrajZeSouboru(String nazevSouboru) {
-        System.out.println("Nacitam prikazy ze souboru '" + nazevSouboru + "':\n");
-        
-        try (BufferedReader ctec = new BufferedReader(new FileReader(nazevSouboru)))
-        {
-            System.out.println(hra.vratUvitani());
-            System.out.println();
 
-            String radek = ctec.readLine();
-            while (radek != null && !hra.konecHry())
-            {
-                System.out.println("* " + radek + " *");
-                System.out.println(hra.zpracujPrikaz(radek));
-                System.out.println();
-
-                radek = ctec.readLine();
-            }
-            
-            System.out.println(hra.vratEpilog());
-        }
-        catch (FileNotFoundException e)
-        {
-            System.out.println("Soubor '" + nazevSouboru + "' nelze otevřít\n" + e);
-        }
-        catch (IOException e)
-        {
-            System.out.println("Doslo k chybě při čtení ze souboru '" + nazevSouboru + "'\n" + e);
-        }
-    }
 
     /**
      * Metoda přečte příkaz z příkazového řádku
