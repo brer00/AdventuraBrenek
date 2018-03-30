@@ -124,6 +124,5 @@ public class Batoh extends Observable {
 	public int getKapacita() {
 		return kapacita;
 	}
-    
- 	
+	
 }

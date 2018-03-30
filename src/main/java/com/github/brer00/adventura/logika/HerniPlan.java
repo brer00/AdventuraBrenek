@@ -66,8 +66,7 @@ public class HerniPlan extends Observable {
         cela1.setUrlMapa("mapa_cela1.png");
         cela2.setUrlMapa("mapa_cela2.png");
         cela3.setUrlMapa("mapa_cela3.png");
-        
-       
+          
         // přiřazují se průchody mezi lokacemi (sousedící lokace)
         muzeum.setVychod(namesti);  
         namesti.setVychod(muzeum);
@@ -106,7 +105,16 @@ public class HerniPlan extends Observable {
         zastavarna.vlozPredmet(obraz);
         Predmet bankovka = new Predmet("bankovka", "Ta bankovka je špinavá! Černá barva – stejná jako na odhozeném rámu obrazu v gangsterké čtvrti.", true);
         zastavarna.vlozPredmet(bankovka);
-                
+             
+        bankovka.setUrlObrazek("batoh_bankovka.png");
+        karticka.setUrlObrazek("batoh_karticka.png");
+        kukla.setUrlObrazek("batoh_kukla.png");
+        obraz.setUrlObrazek("batoh_obraz.png");
+        otiskBoty.setUrlObrazek("batoh_otiskboty.png");
+        paruka.setUrlObrazek("batoh_paruka.png");
+        penezenka.setUrlObrazek("batoh_penezenka.png");
+        ramObrazu.setUrlObrazek("batoh_ramobrazu.png");
+      
         // vytvoreni postav a jejich umisteni
         Postava pivar = new Postava("pivar_pepa", "Klouzek: Neviděl jste někoho s obrazem?\n" +
         "Pepa: Jojo, viděl jsem támle na náměstí běžet chlapa.\n" +

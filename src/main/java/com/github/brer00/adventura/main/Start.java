@@ -32,7 +32,6 @@ public class Start extends Application
      */
     public static void main(String[] args)
     {
-
     	if (args.length == 0) {
             launch(args);
         } else {
@@ -44,13 +43,6 @@ public class Start extends Application
                 System.out.println("Neplatný parametr");
             }
         }
-
-        //		  TODO parametrické spuštění hry
-//        IHra hra = new Hra();
-//        TextoveRozhrani ui = new TextoveRozhrani(hra);
-//        ui.hraj();
-    	
-    	//launch(args);
     }
     
     /**
@@ -60,29 +52,18 @@ public class Start extends Application
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 
-
-
         FXMLLoader loader = new FXMLLoader();
-        //loader.setLocation(getClass().getResource("../ui/hlavnifinal.fxml"));
         loader.setLocation(getClass().getResource("../ui/menufinal.fxml"));
-
         Parent root = loader.load();
 
-    	//HomeController controller = loader.getController();
         MenuController controller = loader.getController();
     	IHra hra = new Hra();
-		//controller.inicializuj(hra);
         controller.setPrimaryStage(primaryStage);
-
-    	
+  	
     	primaryStage.setScene(new Scene(root));
     	primaryStage.show();
     	primaryStage.setTitle("Základní adventura");
 
 	}
 
-
-
-
-	
 }
