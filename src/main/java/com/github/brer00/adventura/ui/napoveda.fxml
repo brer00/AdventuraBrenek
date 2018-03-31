@@ -21,7 +21,7 @@
       <RowConstraints minHeight="0.0" percentHeight="7.0" prefHeight="0.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <WebView fx:id="webContent" prefHeight="200.0" prefWidth="200.0" />
+      <WebView fx:id="webView" prefHeight="200.0" prefWidth="200.0" />
       <Button fx:id="zpet" mnemonicParsing="false" onAction="#zpetDoMenu" text="Zpět do menu" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets left="252.0" />

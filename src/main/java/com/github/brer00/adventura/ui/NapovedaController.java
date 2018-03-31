@@ -18,6 +18,7 @@ import javafx.scene.web.WebView;
 import javafx.scene.control.ScrollPane;
 
 import java.io.IOException;
+import java.net.URL;
 
 
 /**
@@ -27,12 +28,15 @@ import java.io.IOException;
 public class NapovedaController extends GridPane  {
 
 	@FXML private Button zpet;
-	@FXML private WebView content;
+	@FXML public WebView webView;
+
 	private Stage primaryStage;
 
 	
 	public void init() throws IOException{
-			
+
+		WebEngine webEngine = webView.getEngine();
+		webEngine.load(getClass().getResource("napoveda/UzivatelskaPrirucka.html").toExternalForm());	
 
 	}
 	
@@ -58,5 +62,6 @@ public class NapovedaController extends GridPane  {
 	public void setPrimaryStage(Stage primaryStage) {
 		this.primaryStage = primaryStage;
 	}
+	
 		
 }

@@ -57,11 +57,10 @@ public class HomeController extends GridPane implements Observer {
 		textVstup.setText("");
 
 		if(hra.konecHry()) {
-			textVypis.appendText("\n\n Konec hry \n");
+			textVypis.appendText("\n" + hra.getHerniPlan().getAktualniLokace().dlouhyPopisKonec() + "\n" + hra.vratEpilog() + "\n Konec hry \n");
 			textVstup.setDisable(true);
 			odesli.setDisable(true);
-		}
-
+		} 
 	}
 
 	/**

@@ -3,6 +3,8 @@
 package com.github.brer00.adventura.main;
 
 import com.github.brer00.adventura.ui.MenuController;
+import com.github.brer00.adventura.uiText.TextoveRozhrani;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,7 +14,6 @@ import javafx.stage.Stage;
 import com.github.brer00.adventura.logika.Hra;
 import com.github.brer00.adventura.logika.IHra;
 import com.github.brer00.adventura.ui.HomeController;
-import com.github.brer00.adventura.ui.TextoveRozhrani;
 
 /*******************************************************************************
  * Třída  Start je hlavní třídou projektu, který představuje jednoduchou textovou
