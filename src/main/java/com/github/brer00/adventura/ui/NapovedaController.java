@@ -44,7 +44,7 @@ public class NapovedaController extends GridPane  {
 	@FXML
 	void zpetDoMenu() throws IOException{
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(getClass().getResource("../ui/menufinal.fxml"));
+		loader.setLocation(getClass().getResource("/menufinal.fxml"));
 		Parent root = loader.load();
 
 		MenuController controller = loader.getController();

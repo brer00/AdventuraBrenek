@@ -54,7 +54,7 @@ public class Start extends Application
 	public void start(Stage primaryStage) throws Exception {
 
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("../ui/menufinal.fxml"));
+        loader.setLocation(getClass().getResource("/menufinal.fxml"));
         Parent root = loader.load();
 
         MenuController controller = loader.getController();

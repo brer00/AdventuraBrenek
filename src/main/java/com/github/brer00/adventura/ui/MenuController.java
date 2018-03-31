@@ -30,7 +30,7 @@ public class MenuController extends GridPane  {
 	@FXML
 	public void novaHra() throws IOException {
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(getClass().getResource("../ui/hlavnifinal.fxml"));
+		loader.setLocation(getClass().getResource("/hlavnifinal.fxml"));
 		Parent root = loader.load();
 
 		HomeController controller = loader.getController();
@@ -52,7 +52,7 @@ public class MenuController extends GridPane  {
 	@FXML
 	public void napoveda() throws IOException{
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(getClass().getResource("../ui/napoveda.fxml"));
+		loader.setLocation(getClass().getResource("/napoveda.fxml"));
 		Parent root = loader.load();
 
 		NapovedaController controller = loader.getController();

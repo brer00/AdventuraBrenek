@@ -76,8 +76,8 @@ public class HomeController extends GridPane implements Observer {
 		imgPrdemet1.setImage(null);
 		imgPrdemet2.setImage(null);
 		imgPrdemet3.setImage(null);	
-		imgMapa.setImage(new Image("file:img/mapa_muzeum.png"));
-		imgLokace.setImage(new Image("file:img/obrazek_muzeum.jpg"));
+		imgMapa.setImage(new Image("/mapa_muzeum.png"));
+		imgLokace.setImage(new Image("/obrazek_muzeum.jpg"));
 		
 		// text hry se bude spravne zalamovat - nebude pretekat mimo
 		textVypis.setWrapText(true);
@@ -94,11 +94,11 @@ public class HomeController extends GridPane implements Observer {
 		seznamMistnosti.getItems().addAll(hra.getHerniPlan().getAktualniLokace().getVychody());
 
 		// zmeni se obrazek aktualni lokace
-		Image image = new Image("file:img/" + hra.getHerniPlan().getAktualniLokace().getUrlObrazku());		
+		Image image = new Image("/" + hra.getHerniPlan().getAktualniLokace().getUrlObrazku());		
 		imgLokace.setImage(image);
 		
 		// aktualizace mapy
-		image = new Image("file:img/" + hra.getHerniPlan().getAktualniLokace().getUrlMapa());		
+		image = new Image("/" + hra.getHerniPlan().getAktualniLokace().getUrlMapa());		
 		imgMapa.setImage(image);
 		
 		
@@ -109,17 +109,14 @@ public class HomeController extends GridPane implements Observer {
 		imgPrdemet3.setImage(null);
 		switch (predmety.size()) {
 		case 3:
-			 image = new Image("file:img/" + predmety.get(2).getUrlObrazek());		
+			 image = new Image("/" + predmety.get(2).getUrlObrazek());		
 			 imgPrdemet3.setImage(image);	
-			 System.out.println("img3");
 		case 2:
-			 image = new Image("file:img/" + predmety.get(1).getUrlObrazek());		
+			 image = new Image("/" + predmety.get(1).getUrlObrazek());		
 			 imgPrdemet2.setImage(image);
-			 System.out.println("img2");
 		case 1:
-			 image = new Image("file:img/" + predmety.get(0).getUrlObrazek());		
+			 image = new Image("/" + predmety.get(0).getUrlObrazek());		
 			 imgPrdemet1.setImage(image);
-			 System.out.println("img1");
 		default:
 			break;
 		}
@@ -129,7 +126,7 @@ public class HomeController extends GridPane implements Observer {
 	@FXML
 	void zpetDoMenu() throws IOException{
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(getClass().getResource("../ui/menufinal.fxml"));
+		loader.setLocation(getClass().getResource("/menufinal.fxml"));
 		Parent root = loader.load();
 
 		MenuController controller = loader.getController();
