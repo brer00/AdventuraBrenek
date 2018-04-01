@@ -132,6 +132,17 @@ public class Lokace {
                 + seznamPredmetu()+ "\n"
                 + seznamPostav();
     }
+    
+    /**
+     * Vrací "dlouhý" popis vítězných a proherních lokací
+     *
+     * @return    dlouhý popis lokace
+     */
+    public String dlouhyPopisKonec() {
+        return "Nachážíš se v: " + nazev + ".\n"
+        		+ popis + "\n"; 
+               
+    }
 
     /**
      * Vrací textový řetězec, který popisuje všechny předměty v lokaci, například:

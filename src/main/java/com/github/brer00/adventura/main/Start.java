@@ -3,6 +3,8 @@
 package com.github.brer00.adventura.main;
 
 import com.github.brer00.adventura.ui.MenuController;
+import com.github.brer00.adventura.uiText.TextoveRozhrani;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,7 +14,6 @@ import javafx.stage.Stage;
 import com.github.brer00.adventura.logika.Hra;
 import com.github.brer00.adventura.logika.IHra;
 import com.github.brer00.adventura.ui.HomeController;
-import com.github.brer00.adventura.ui.TextoveRozhrani;
 
 /*******************************************************************************
  * Třída  Start je hlavní třídou projektu, který představuje jednoduchou textovou
@@ -53,7 +54,7 @@ public class Start extends Application
 	public void start(Stage primaryStage) throws Exception {
 
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("../ui/menufinal.fxml"));
+        loader.setLocation(getClass().getResource("/menufinal.fxml"));
         Parent root = loader.load();
 
         MenuController controller = loader.getController();
